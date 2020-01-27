@@ -1,0 +1,21 @@
+.rate-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-white-light;
+    margin: 3rem 0;
+    padding-bottom: 3rem;
+
+    .star-icon {
+        cursor: pointer;
+        font-size: 4rem;
+        opacity: .5;
+        transition: opacity .3s ease-in-out;
+
+        &:hover { opacity: 1; }
+
+        &--red { color: $color-red; }
+        &--yellow { color: $color-yellow; }
+        &--green { color: $color-green; }
+    }
+}

@@ -7,10 +7,13 @@
   "author": "Jean-Marc Moeckel",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages -d public",
     "serve": "live-server public/",
-    "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "webpack": "webpack",
+    "dev-server": "webpack-dev-server",
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
++   "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
@@ -30,6 +33,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-modal": "2.2.2",
+    "react-scripts": "^3.3.0",
     "sass-loader": "6.0.6",
     "style-loader": "^0.18.2",
     "svg-inline-loader": "^0.8.0",

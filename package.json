@@ -7,8 +7,7 @@
   "author": "Jean-Marc Moeckel",
   "license": "MIT",
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d public",
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server"
